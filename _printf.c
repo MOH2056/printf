@@ -7,11 +7,9 @@
 int _printf(const char * const format, ...)
 {
 	new print[] = {
-		{"%s", s_specifier},
-		{"%d", d_specifier},
+		{"%s", s_specifier}, {"%c", c_specifier},
 		{"%%", percentage_s},
-		{"%i", i_specifier},
-		{"%c", c_specifier},
+		{"%i", i_specifier}, {"%d", d_specifier}
 	};
 	va_list name;
 	int xy = 0;
@@ -22,7 +20,7 @@ int _printf(const char * const format, ...)
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 Here:
-	while (format[1] != '\0')
+	while (format[xy] != '\0')
 	{
 		rz = 4;
 		while (rz >= 0)
