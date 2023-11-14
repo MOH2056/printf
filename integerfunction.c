@@ -13,12 +13,14 @@ int i_specifier(va_list digit)
 {
 	int retain = va_arg(digit, int);
 
-	retain = retain / 10;
-	int start = retain;
+	int start;
 	int end = retain % 10;
 	int pv = 1;
 	int v;
 	int a = 1;
+
+	retain = retain / 10;
+	start = retain;
 
 	if (end < 0)
 	{
@@ -62,11 +64,13 @@ int d_specifier(va_list digit)
 {
 	int retain = va_arg(digit, int);
 
-	retain = retain / 10;
-	int start = retain;
+	int start;
 	int end = retain % 10;
 	int pv = 1;
 	int v, a = 1;
+
+	retain = retain / 10;
+	start = retain;
 
 	if (start > 0)
 	{
