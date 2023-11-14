@@ -18,6 +18,7 @@ int d_specifier(va_list digit);
 int s_specifier(va_list wawu);
 int c_specifier(va_list alpha);
 int percentage_s(void);
+ssize_t output(int f, const void *s, size_t t);
 
 /* structures and typedef*/
 /**

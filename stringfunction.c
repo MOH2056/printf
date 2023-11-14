@@ -30,7 +30,8 @@ int s_specifier(va_list wawu)
 
 		while (x < distance)
 		{
-			mr_putchar(string[x]);
+			/*mr_putchar(string[x]);*/
+			output(1, string, strlen(string));
 			return (distance);
 			x++;
 		}
