@@ -8,11 +8,11 @@
 
 int c_specifier(va_list alpha)
 {
-	char c;
-
-	c = va_arg(alpha, char);
+	char c = va_arg(alpha, int);
 	mr_putchar('c');
+	return;
 }
+
 /**
  * percentage_s - this is a function
  *
