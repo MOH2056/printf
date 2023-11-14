@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "main.h"
 /**
  * output - this is a function
  * @f: parameter
