@@ -6,6 +6,7 @@
 #include <stdarg.h>
 #include <ctype.h>
 #include <unistd.h>
+#include <limits.h>
 
 
 /* function declerations/prototypes */
@@ -16,7 +17,7 @@ int i_specifier(va_list digit);
 int d_specifier(va_list digit);
 int s_specifier(va_list wawu);
 int c_specifier(va_list alpha);
-int percentage_s();
+int percentage_s(void);
 
 /* structures and typedef*/
 /**
