@@ -14,6 +14,9 @@ int _printf(const char *format, ...);
 int mr_putchar(char c);
 int i_specifier(va_list digit);
 int d_specifier(va_list digit);
+int s_specifier(va_list wawu);
+int character(va_list alpha);
+char percentage_s(void);
 
 /* structures and typedef*/
 
