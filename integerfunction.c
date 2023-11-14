@@ -72,6 +72,16 @@ int d_specifier(va_list digit)
 	retain = retain / 10;
 	start = retain;
 
+	if (end < 0)
+	{
+		mr_putchar('-');
+		start = -start;
+		retain = -retain;
+		end = -end;
+		a++;
+	}
+
+
 	if (start > 0)
 	{
 		while (start / 10 != 0)
@@ -88,14 +98,6 @@ int d_specifier(va_list digit)
 			pv = pv / 10;
 			a++;
 		}
-	}
-	if (end < 0)
-	{
-		mr_putchar('-');
-		start = -start;
-		retain = -retain;
-		end = -end;
-		a++;
 	}
 	mr_putchar (end + '0');
 	return (a);
