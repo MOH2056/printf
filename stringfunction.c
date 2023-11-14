@@ -15,7 +15,7 @@ int s_specifier(va_list wawu)
 		distance = strlen(string);
 		for (x = 0; x < distance; x++)
 		{
-			putchar(string[x]);
+			mr_putchar(string[x]);
 			return (distance);
 		}
 	}
@@ -25,7 +25,7 @@ int s_specifier(va_list wawu)
 		distance = strlen(string);
 		for (x = 0; x < distance; x++)
 		{
-			putchar(string[x]);
+			mr_putchar(string[x]);
 			return (distance);
 		}
 	}

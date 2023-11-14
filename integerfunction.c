@@ -41,13 +41,13 @@ int i_specifier(va_list digit)
 		while (pv > 0)
 		{
 			v = start / pv;
-			putchar(v + '0');
+			mr_putchar(v + '0');
 			start = start - (v * pv);
 			pv = pv / 10;
 			a++;
 		}
 	}
-	putchar (end + '0');
+	mr_putchar (end + '0');
 	return (a);
 }
 
@@ -83,7 +83,7 @@ int d_specifier(va_list digit)
 		while (pv > 0)
 		{
 			v = start / pv;
-			putchar(v + '0');
+			mr_putchar(v + '0');
 			start = start - (v * pv);
 			pv = pv / 10;
 			a++;
@@ -97,6 +97,6 @@ int d_specifier(va_list digit)
 		end = -end;
 		a++;
 	}
-	putchar (end + '0');
+	mr_putchar (end + '0');
 	return (a);
 }
