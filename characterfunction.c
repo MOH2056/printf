@@ -11,3 +11,12 @@ int character(va_list alpha)
 	c = va_arg(alpha, char);
 	mr_putchar('c');
 }
+/**
+ * percentage_s - this is a function
+ *
+ * Return: 0
+ */
+char percentage_s(void)
+{
+	mr_putchar('%');
+}
