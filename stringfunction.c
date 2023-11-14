@@ -10,16 +10,8 @@ int s_specifier(va_list wawu)
 
 	char *string = va_arg(wawu, char *);
 
-	if (string != NULL)
-	{
-		distance = strlen(string);
-		for (x = 0; x < distance; x++)
-		{
-			mr_putchar(string[x]);
-			return (distance);
-		}
-	}
-	else
+
+	if (string == NULL)
 	{
 		string = "(null)";
 		distance = strlen(string);
@@ -27,6 +19,20 @@ int s_specifier(va_list wawu)
 		{
 			mr_putchar(string[x]);
 			return (distance);
+		}
+	}
+
+	else
+	{
+		distance = strlen(string);
+
+		x = 0;
+
+		while (x < distance)
+		{
+			mr_putchar(string[x]);
+			return (distance);
+			x++;
 		}
 	}
 	return (distance);
