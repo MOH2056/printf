@@ -27,7 +27,7 @@ char percentage_s(void);
  *
  */
 
-typedef struct element print
+typedef struct element 
 {
 	char *pointer;
 	int (*v)();
