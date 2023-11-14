@@ -14,9 +14,9 @@ int _printf(const char * const format, ...)
 		{"%c", c_specifier},
 	};
 	va_list name;
-	int xy;
+	int xy = 0;
 	int rz;
-	int width;
+	int width = 0;
 
 	va_start(name, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
