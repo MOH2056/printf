@@ -16,6 +16,7 @@ int _printf(const char * const format, ...)
 	va_list name;
 	int xy;
 	int rz;
+	int width;
 
 	va_start(name, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
@@ -27,7 +28,7 @@ Here:
 		while (rz >= 0)
 		{
 			if (print[rz].pointer[0] == format[xy]
-					&& print[rz].pointer[1] == format[i + 1])
+					&& print[rz].pointer[1] == format[xy + 1])
 			{
 				width += print[rz].v(name);
 				xy = xy + 2;

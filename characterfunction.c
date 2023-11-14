@@ -18,8 +18,8 @@ int c_specifier(va_list alpha)
  *
  * Return: 0
  */
-char percentage_s(void)
+int percentage_s()
 {
-	mr_putchar('%');
+	mr_putchar(37);
 	return (0);
 }
