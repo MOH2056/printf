@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
  * character - this function is to print character
  * @alpha: parameter
  * Return: 0
  */
-int character(va_list alpha)
+
+int c_specifier(va_list alpha)
 {
 	char c;
 

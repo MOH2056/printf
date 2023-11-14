@@ -19,6 +19,18 @@ int character(va_list alpha);
 char percentage_s(void);
 
 /* structures and typedef*/
+/**
+ * struct element - formatter
+ *
+ * @pointer: character pointer
+ * @v: function for specifier conversion
+ *
+ */
 
+typedef struct element print
+{
+	char *pointer;
+	int (*v)();
+} new;
 
 #endif
