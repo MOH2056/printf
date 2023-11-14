@@ -5,6 +5,8 @@
 #include <string.h>
 #include <stdarg.h>
 #include <ctype.h>
+#include <unistd.h>
+
 
 /* function declerations/prototypes */
 
